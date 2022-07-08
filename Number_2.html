@@ -1,0 +1,106 @@
+<style>
+#content{  
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+}
+    .my-form label
+        {
+            cursor: hand;
+            cursor: pointer;
+        }
+
+     .my-form label input[type="radio"],
+    .my-form label input[type="radio"] + span,
+    .my-form label input[type="radio"] + span::before
+    {
+        vertical-align: middle;
+    }
+
+    .my-form label input[type="radio"]
+    {
+        position: absolute;
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+
+     .my-form label input[type="radio"] + span,
+    .my-form label input[type="radio"] + span::before
+    {
+        display: inline-block;
+    }
+
+    .my-form label input[type="radio"] + span
+    {
+        font: normal 13px/14px "Segoe UI", Sans-serif;
+    }
+
+    .my-form label input[type="radio"] + span::before
+    {
+        text-indent: -9999px;
+        width: 12px;
+        height: 12px;
+        font: bold 12px/12px Garamond, "Segoe UI", Sans-serif;
+        text-transform: uppercase;
+        border: solid 1px #0b70cd;
+        border-radius: 3px;
+        box-shadow: 0 0 1px 1px #ccc;
+        background: #0b70cd;
+        background: -moz-linear-gradient(-45deg, #fefefe, #0b70cd);
+        background: -webkit-linear-gradient(-45deg, #fefefe, #0b70cd);
+        background: -o-linear-gradient(-45deg, #fefefe, #0b70cd);
+        background: -ms-linear-gradient(-45deg, #fefefe, #0b70cd);
+        background: linear-gradient(-45deg, #fefefe, #0b70cd);
+        margin: 0 4px 0 0;
+    }
+
+ 
+    .my-form label input[type="radio"]:checked + span::before
+    {
+        text-indent: 2px;
+        color: #fff;
+        text-shadow: 0 0 2px #0b70cd;
+    }
+
+    .my-form label input[type="radio"] + span::before
+    {
+        content: "\2022";
+        font-size: 22px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+    }
+
+    .my-form label input[type="radio"]:checked + span::before
+    {
+        text-indent: 2px;
+    }
+	
+	.my-form label input[type="radio"]:checked + span
+    {
+        text-indent: 2px;
+		font-weight: bold;
+    }
+.my-form label input[type="radio"]:hover + span{
+	background-color: yellow;
+  	border: none;
+  	padding: 3px;
+}
+    </style>
+	<div id="background">
+    <div id="content">
+    <ul class="my-form">
+        <li><label><input type="radio" name="radio-button-group-0"><span>option 1</span></label></li>
+        <li><label><input type="radio" name="radio-button-group-0"><span>option 2</span></label></li>
+        <li><label><input type="radio" name="radio-button-group-0"><span>option 3</span></label></li>
+		<li><label><input type="radio" name="radio-button-group-0"><span>option 4</span></label></li>
+		<li><label><input type="radio" name="radio-button-group-0"><span>option 5</span></label></li>
+    </ul>
+	</div>
+	</div>
+ 
+ 
+  
